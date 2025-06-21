@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Article Generator
 
 A comprehensive web application that uses AI to generate human-like articles based on trending topics, with automatic blog integration and copyright-free image search.
@@ -311,3 +312,6 @@ If you encounter any issues:
 ---
 
 **Made with ❤️ for content creators everywhere** 
+=======
+# proj1
+>>>>>>> 1e16ffa7c02abed9adc41d944c5c168c9112fa59
