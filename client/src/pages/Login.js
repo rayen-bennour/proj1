@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -67,6 +67,11 @@ const Login = () => {
             </button>
           </div>
         </form>
+        <div className="text-sm text-center">
+          <Link to="/register" className="font-medium text-blue-600 hover:text-blue-500">
+            Don't have an account? Sign Up
+          </Link>
+        </div>
       </div>
     </div>
   );
