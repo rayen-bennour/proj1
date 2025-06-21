@@ -1,0 +1,36 @@
+{
+  "name": "ai-article-generator",
+  "description": "AI-powered article generator with blog integration",
+  "repository": "https://github.com/yourusername/ai-article-generator",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "react", "ai", "article-generator"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment setting",
+      "value": "production"
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT tokens",
+      "generator": "secret"
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API key"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string"
+    }
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postinstall": "cd client && npm install && npm run build"
+  }
+} 
